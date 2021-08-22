@@ -1,0 +1,83 @@
+.about {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .bgimg {
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 40px;
+    z-index: 2;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0;
+    margin: 0;
+    margin-top: -13px; /* 1/2 height */
+    text-align: center;
+    padding-bottom: 3px;
+  }
+  #mainDiv {
+    z-index: 2;
+    position: absolute;
+    top: 11.5%;
+    left: 47.1%;
+    right: 0;
+    width: 100px;
+    height: 0.1px;
+    padding: 0;
+    margin: 0;
+    margin-top: -13px; /* 1/2 height */
+    text-align: center;
+    padding-bottom: 3px;
+    background: #ff416c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ff4b2b,
+      #ff416c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ff4b2b,
+      #ff416c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .container {
+    transition: all 1s ease;
+    font-size: 20px;
+    text-align: unset;
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    right: 25%;
+    width: 70%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    margin-top: -13px; /* 1/2 height */
+    // background-color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+
+    .para {
+      font-family: "Allison", cursive;
+      font-family: "Dancing Script", cursive;
+      font-weight: 50px;
+      font-size: 25px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

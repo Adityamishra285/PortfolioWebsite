@@ -1,0 +1,12 @@
+.pdf {
+  height: 100%;
+  width: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &:embed {
+    overflow: hidden;
+  }
+}
