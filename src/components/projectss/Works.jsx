@@ -12,6 +12,8 @@ export default function Works() {
         "A Portfolio created in ReactJs. Created a responsive React portfolio website using functional components and React hooks with Sass. ",
       img:
         "./myassets/portfolioimg.png",
+        link:
+        "https://github.com/Adityamishra285/PortfolioWebsite",
     },
     {
       id: "2",
@@ -21,6 +23,8 @@ export default function Works() {
         "A Realtime Chat Application created using ReactJS for front-end, NodeJS and Socket.io on the back-end. You can also share Emojis and Images at realtime.",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        link:
+        "https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/",
     },
     {
       id: "3",
@@ -30,6 +34,8 @@ export default function Works() {
         "Some basic Games written in Vanilla JS. Simon Game, Drum Kit, Roll Dice and more",
       img:
         "./myassets/games.jpg",
+        link:
+        "",
     },
   ];
 
@@ -55,7 +61,7 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <a href={d.link} target="_blank"> <span>Project</span></a>
                 </div>
               </div>
               <div className="right">

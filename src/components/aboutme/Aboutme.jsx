@@ -7,6 +7,9 @@ export default function Aboutme() {
             <h1>About me</h1>
             <div id="mainDiv"> </div>
             <img className="bgimg" src="myassets/bg4.jpg" alt="" />
+            <div className="imgContainer">
+<img src="myassets/myfoto.png" alt="" />
+            </div> 
             <div className="container">
                 <p className="para">
                     I am a pre final year student and primarily a <b>MERN Stack Developer </b>  

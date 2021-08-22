@@ -85,6 +85,30 @@
             flex-direction: column;
             justify-content: space-between;
 
+            a {
+              color: red;
+            } /* Globally */
+
+            /* Each state */
+
+            a:visited {
+              text-decoration: none;
+              color: red;
+            }
+            a:hover {
+              text-decoration: none;
+              color: blue;
+            }
+            a:focus {
+              text-decoration: none;
+              color: red;
+            }
+            a:hover,
+            a:active {
+              text-decoration: none;
+              color: black;
+            }
+
             .imgContainer {
               width: 40px;
               height: 40px;
@@ -121,9 +145,8 @@
               }
             }
             span {
-              font-size: 12px;
+              font-size: 13px;
               font-weight: 600;
-              text-decoration: underline;
               cursor: pointer;
             }
           }
