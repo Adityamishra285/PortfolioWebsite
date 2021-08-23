@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .about {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   color: white;
   display: flex;
   flex-direction: column;
@@ -14,23 +14,27 @@
   }
 
   .imgContainer {
-    transition: all 0.8s ease;
+    background-color: black;
+    transition: all 1s ease;
     // background-color: rgb(253, 0, 0);
     z-index: 2;
     position: absolute;
-    top: 35%;
+    top: 34%;
     left: 65%;
     right: 0;
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 300px;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    // text-align: center;
-    border-radius: 50%;
-    border: solid;
-    border-color: yellow;
-    border-width: 2px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    // border: solid;
+    // border-color: rgb(0, 0, 0);
+    // border-width: 5px;
 
     &:hover {
       transform: scale(1.08);
@@ -43,15 +47,20 @@
     }
 
     img {
-      transition: all 0.5s ease;
       height: 100%;
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      // object-fit: contain;
     }
   }
 
   h1 {
-    font-size: 40px;
+    color: black;
+    font-size: 50px;
     z-index: 2;
     position: absolute;
     top: 3%;
@@ -65,29 +74,27 @@
     text-align: center;
     padding-bottom: 3px;
   }
-  #mainDiv {
-    z-index: 2;
-    position: absolute;
-    top: 10%;
-    left: 47.1%;
-    right: 0;
-    width: 100px;
-    height: 0.1px;
-    padding: 0;
-    margin: 0;
-    margin-top: -13px; /* 1/2 height */
-    text-align: center;
-    padding-bottom: 3px;
-    background-color: yellow;
+  // #mainDiv {
+  //   z-index: 2;
+  //   position: absolute;
+  //   top: 10%;
+  //   left: 47.1%;
+  //   right: 0;
+  //   width: 100px;
+  //   height: 0.1px;
+  //   padding: 0;
+  //   margin: 0;
+  //   margin-top: -13px; /* 1/2 height */
+  //   text-align: center;
+  //   padding-bottom: 3px;
+  //   background-color: yellow;
 
-    @include mobile {
-      left: 40%;
-    }
-  }
+  //   @include mobile {
+  //     left: 40%;
+  //   }
+  // }
   .container {
-    border: solid;
-    border-color: yellow;
-    border-width: 1px;
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     transition: all 1s ease;
     font-size: 20px;
@@ -97,7 +104,7 @@
     top: 20%;
     left: 10%;
     right: 55%;
-    width: 30%;
+    width: 35%;
     height: 70%;
     padding: 0;
     margin: 0;
@@ -114,6 +121,7 @@
     .para {
       // font-family: "Allison", cursive;
       // font-family: "Dancing Script", cursive;
+      padding-top: 30px;
       font-family: "Josefin Sans", sans-serif;
       font-weight: 50px;
       font-size: 22px;
